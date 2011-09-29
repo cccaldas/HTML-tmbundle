@@ -4,16 +4,14 @@
 <dict>
 	<key>changed</key>
 	<dict>
-		<key>content</key>
-		<string>&lt;div${1: id="${2:id}"}&gt;$0&lt;/div&gt;</string>
-		<key>name</key>
-		<string>div</string>
+		<key>tabTrigger</key>
+		<string>option</string>
 	</dict>
 	<key>deleted</key>
 	<array/>
 	<key>isDelta</key>
 	<true/>
 	<key>uuid</key>
-	<string>576036C0-A60E-11D9-ABD6-000D93C8BE28</string>
+	<string>5820372E-A093-4F38-B25C-B0CCC50A0FC4</string>
 </dict>
 </plist>

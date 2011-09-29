@@ -1,0 +1,645 @@
+/*fonts*/
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+  	font-weight: normal;
+	src: url('OpenSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+  	font-weight: bold;
+	src: url('OpenSans-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+  	font-weight: normal;
+	src: url('OpenSans-Italic.ttf');
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: italic;
+  	font-weight: bold;
+	src: url('OpenSans-SemiboldItalic.ttf');
+}
+/*fonts*/
+
+body, div, p, a, strong, span, li {
+	font-family: 'Open Sans';
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	min-width: 962px;
+	overflow-x: hidden;
+	text-align: center;	
+}
+
+.txt-left 	{ text-align: left; }
+.txt-center { text-align: center; }
+.txt-right 	{ text-align: right; }
+
+.clear { clear: both; }
+strong { font-weight: bold; }
+
+/*titles*/
+h2 {
+	text-align: left;
+	color: #e03531;
+	font-size: 24px;
+	margin: 0 0 14px 0;
+}
+
+h2 span { color: #202021; }
+
+h3 {
+	color: #202021;
+	font-size: 18px;
+	font-style: italic;
+	margin: 0 0 4px 0;
+}
+
+/*text*/
+.text-normal {
+	text-align: left;
+	color: #5a5a5c;
+	font-size: 11px;
+}
+
+/*links*/
+.link-normal {
+	color: #000;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.link-normal:hover {
+	color: #e03531;
+}
+
+
+
+
+#body {
+	margin-top: 10px;
+}
+
+#header {
+	width: 100%;
+	height: 388px;
+	background: url('../images/header-bg.png') repeat-x;
+}
+
+#header-container {
+	width: 962px;
+	height: 388px;
+	margin: auto;
+}
+
+#header-language {
+	width: 388px;
+	height: 29px;
+	text-align: left;
+	float: right;
+}
+
+#header-language-combobox {
+	float: right;
+}
+
+
+.header-language-title {
+	text-align: left;
+	font-size: 9px;
+	color: #5a5a5c;
+	float: right;
+	margin: 6px 10px 0 0;
+	text-transform: uppercase;
+}
+
+
+#header-menu {
+	width: 520px;
+	height: 35px;
+	margin: 30px 0 0 0;
+	float: right;
+	clear: both;
+}
+
+.header-menu-item {
+	height: 35px;
+	float: right;
+	margin-left: -20px;
+}
+
+.header-menu-item:hover .header-menu-item-label-container {
+	color: #ff0000;
+}
+
+.header-menu-item.selected .header-menu-item-label-container {
+	color: #888888;
+}
+
+.header-menu-item.selected .header-menu-item-label {
+	background-image: url('../images/header-menu-item-label-bg_selected.png');
+}
+
+.header-menu-item.selected .header-menu-item-left, .header-menu-item.selected .header-menu-item-right {
+	background-image: url('../images/header-menu-item-corners_selected.png');
+}
+
+.header-menu-item-left {
+	width: 22px;
+	height: 35px;
+	float: left;
+	background: url('../images/header-menu-item-corners.png') no-repeat top left;
+}
+
+.header-menu-item-label {
+	height: 35px;
+	padding: 8px 0 0 0;
+	float: left;
+	background: url('../images/header-menu-item-label-bg.png') repeat-x;
+}
+
+.header-menu-item-label-container {
+	min-width: 82px;
+	float: left;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+
+.header-menu-item-light {
+	width: 100%;
+	float: left;
+	clear: both;
+	margin: 4px 0 0 0;
+}
+
+
+.header-menu-item-right {
+	width: 22px;
+	height: 35px;
+	float: left;
+	background: url('../images/header-menu-item-corners.png') no-repeat top right;
+}
+
+
+
+
+#header-banner {
+	width: 962px;
+	height: 264px;
+	margin: 30px 0 0 0;
+	float: right;
+	clear: both;
+}
+
+/*banner*/
+.banner {
+	
+}
+
+.banner-image {
+	text-align: right;
+	float: right;
+	margin: 0 40px 0 0;
+}
+
+.banner-content {
+	width: 420px;
+	float: right;
+}
+
+.banner-content-title {
+	text-align: left;
+	text-transform: uppercase;
+	color: #df3331;
+	font-size: 50px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.banner-content-subtitle {
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 0 0 6px 0;
+	color: #fff;
+}
+
+.banner-content-description {
+	text-align: left;
+	color: #fff;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 14px;
+}
+
+.banner-content-button {
+	text-align: right;
+	margin: 18px 0 0 0;
+}
+/*banner*/
+
+
+
+#header-stripe {
+	text-align: left;
+	position: absolute;
+	float: left;
+	width: 374px;
+	height: 345px;
+	background: url('../images/header-stripe.png') no-repeat;
+}
+
+
+#header-stripe-background {
+	position: relative;
+	left: -799px;
+	width: 799px;
+	height: 1143px;
+	background: url('../images/header-stripe-background.png') no-repeat;
+}
+
+#header-adria {
+	position: relative;
+	top: 52px;
+}
+
+#content {
+	width: 962px;
+	min-height: 100px;
+	margin: auto;
+	clear: both;
+}
+
+
+
+
+#footer-spacing {
+	float: left;
+	clear: both;
+	height: 64px;
+}
+
+
+#footer {
+	width: 100%;
+	height: 190px;
+	clear: both;
+	background: url('../images/footer-bg.png') repeat-x;
+}
+
+#footer-container {
+	width: 962px;
+	height: 190px;
+	margin: auto;
+}
+
+#footer-stripe {
+	float: right;
+	margin: -150px 0 0 0;
+	width: 202px;
+	height: 180px;
+	background: url('../images/footer-stripe.png') no-repeat;
+}
+
+#footer-stripe-social {
+	text-align: right;
+	width: 80px;
+	height: 50px;
+	float: right;
+	margin: 86px 0 0 0;
+}
+
+.footer-stripe-social-follow {
+	text-align: right;
+	font-size: 12px;
+	color: #8c211f;
+}
+
+.footer-stripe-social-container {
+	text-align: right;
+}
+
+.footer-stripe-social-container a {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin: 8px 8px 0 0;
+	background: url('../images/footer-stripe-social-bg.png') no-repeat;
+}
+
+.footer-stripe-social-container a:hover {
+	
+}
+
+a.footer-stripe-social-linkedin {
+	
+}
+
+a.footer-stripe-social-linkedin:hover {
+	background-position: 0 -15px;
+}
+
+a.footer-stripe-social-facebook {
+	background-position: -15px 0;
+}
+
+a.footer-stripe-social-facebook:hover {
+	background-position: -15px -15px;	
+}
+
+a.footer-stripe-social-twitter {
+	background-position: -30px 0;
+	margin-right: 0;
+}
+
+a.footer-stripe-social-twitter:hover {
+	background-position: -30px -15px;
+}
+
+
+
+
+
+
+#simbionte {
+	width: 94px;
+	height: 5px;
+	display: block;
+	cursor: pointer;
+	float: right;
+	margin: 24px 0 0 0;
+	clear: both;
+	background: url('../images/simbionte.png') top left no-repeat;
+}
+
+#simbionte:hover {
+	background-position: 0 -5px;
+}
+
+
+
+
+
+
+#footer-stripe-background {
+	position: relative;
+	right: -962px;
+	top: -730px;
+	width: 799px;
+	height: 910px;
+	background: url('../images/footer-stripe-background.png') no-repeat;
+}
+
+#footer-sitemap {
+	width: 522px;
+	height: 120px;
+	float: left;
+	margin: 14px 0 0 0;
+}
+
+.footer-sitemap-area {
+	text-align: left;
+	width: 128px;
+	height: 120px;
+	float: left;
+}
+
+.footer-sitemap-area-title {
+	text-align: left;
+	color: #464758;
+	font-size: 14px;
+	margin: 0 0 6px 0;
+}
+
+.footer-sitemap-area-item {
+	background: url('../images/footer-sitemap-area-item-dot.png') no-repeat 4px 6px;
+	padding: 0 0 0 16px;
+}
+
+.footer-sitemap-area-item a {
+	color: #868796;
+	font-size: 12px;
+	display: block;
+}
+
+.footer-sitemap-area-item:hover {
+	background-image: url('../images/footer-sitemap-area-item-dot_over.png');
+}
+
+.footer-sitemap-area-item:hover a {
+	color: #464758;
+}
+
+
+
+
+
+
+
+#footer-address {
+	text-align: left;
+	width: 290px;
+	height: 150px;
+	float: left;
+	background: url('../images/footer-address-bg.png') no-repeat top left;
+}
+
+.footer-address-title {
+	text-align: left;
+	float: left;
+	margin: 16px 0 0 10px;
+	font-size: 16px;
+	color: #202021;
+}
+
+#footer-address address {
+	text-align: left;
+	float: left;
+	clear: both;
+	margin: 8px 0 0 110px;
+	font-size: 9px;
+	color: #5a5a5c;
+}
+
+.footer-address-tel {
+	float: left;
+	clear: both;
+	margin: 0 0 0 110px;
+	text-align: left;
+	color: #000000;
+	font-size: 9px;
+}
+
+.footer-address-contact {
+	float: right;
+	clear: both;
+	margin: 10px 28px 0 0;
+}
+
+
+#footer-copyright {
+	float: left;
+	clear: both;
+	margin: 10px 0 0 0;
+	text-align: left;
+	color: #cccccc;
+	font-size: 9px;
+}
+
+
+/*default-button*/
+.default-button {
+	padding: 0;
+	height: 30px;
+	cursor: pointer;
+	background: none;
+	display: inline-block;
+}
+
+.default-button:hover {
+	
+}
+
+.default-button:hover .default-button-label {
+	color: #ff0000;
+}
+
+.default-button-left {
+	width: 12px;
+	height: 27px;
+	float: left;
+	background: url('../images/default-button-corners.png') no-repeat;
+}
+
+.default-button-label {
+	min-width: 10px;
+	height: 27px;
+	float: left;
+	font-size: 9px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 6px 10px;
+	color: #fff;
+	background: url('../images/default-button-bg.png') repeat-x top;
+}
+
+.default-button-right {
+	width: 12px;
+	height: 27px;
+	float: left;
+	background: url('../images/default-button-corners.png') no-repeat -12px 0;
+}
+/*default-button*/
+
+/*default-combobox*/
+.default-combobox {
+	display: inline-block;
+	margin: 0 20px 0 0;
+}
+
+.default-combobox-label {
+	
+}
+
+.default-combobox-label-left {
+	width: 14px;
+	height: 24px;
+	float: left;
+	background: url('../images/default-combobox-corners.png') no-repeat top left;
+}
+
+.default-combobox-label-container {
+	min-width: 30px;
+	height: 24px;
+	float: left;
+	background: url('../images/default-combobox-label-bg.png') repeat-x;
+}
+
+.default-combobox-label-right {
+	width: 14px;
+	height: 24px;
+	float: left;
+	margin: 0 0 0 -4px;
+	background: url('../images/default-combobox-corners.png') no-repeat -14px 0;
+}
+
+.default-combobox-label-button {
+	width: 22px;
+	height: 22px;
+	float: left;
+	margin: 1px -30px 0 12px;
+	cursor: pointer;
+	background: url('../images/default-combobox-label-button.png') no-repeat;
+}
+
+.default-combobox-list {
+	position: absolute;
+	display: none;
+	float: left;
+	clear: both;
+	margin: 23px 0 0 0;
+	background: #fff;
+	border: solid 1px #f9f9f9;
+}
+
+.default-combobox-list-item {
+	cursor: pointer;
+}
+
+.default-combobox-list-item:hover {
+	background: #eeeeee;
+}
+
+/*language*/
+.default-combobox.language {
+	
+}
+
+.default-combobox.language .default-combobox-list-item, .default-combobox.language .default-combobox-label-container {
+	color: #5a5a5c;
+	font-size: 9px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.default-combobox.language .default-combobox-label-container {
+	width: 80px;
+	padding: 2px 0 0 0;
+}
+
+.language-combobox-list-item {
+	display: block;
+	width: 116px;
+	padding: 4px;
+}
+
+.language-combobox-list-item img {
+	float: left;
+	margin: 0 4px 0 0;	
+}
+
+/*default-combobox*/
+
+
+
+
+
+
+
+

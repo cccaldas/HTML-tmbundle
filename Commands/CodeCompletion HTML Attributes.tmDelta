@@ -4,8 +4,12 @@
 <dict>
 	<key>changed</key>
 	<dict>
+		<key>command</key>
+		<string>complete_attributes.rb</string>
 		<key>keyEquivalent</key>
 		<string>^ </string>
+		<key>output</key>
+		<string>showAsTooltip</string>
 	</dict>
 	<key>deleted</key>
 	<array/>

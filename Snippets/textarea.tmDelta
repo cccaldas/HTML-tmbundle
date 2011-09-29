@@ -5,15 +5,15 @@
 	<key>changed</key>
 	<dict>
 		<key>content</key>
-		<string>&lt;div${1: id="${2:id}"}&gt;$0&lt;/div&gt;</string>
+		<string>&lt;textarea name="${1:Name}" id="${1:Name}" rows="${2:8}" cols="${3:40}"&gt;$0&lt;/textarea&gt;</string>
 		<key>name</key>
-		<string>div</string>
+		<string>textarea</string>
 	</dict>
 	<key>deleted</key>
 	<array/>
 	<key>isDelta</key>
 	<true/>
 	<key>uuid</key>
-	<string>576036C0-A60E-11D9-ABD6-000D93C8BE28</string>
+	<string>AAC9D7B8-A12C-11D9-A5A2-000D93C8BE28</string>
 </dict>
 </plist>

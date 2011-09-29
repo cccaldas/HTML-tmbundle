@@ -5,7 +5,7 @@
 	<key>changed</key>
 	<dict>
 		<key>content</key>
-		<string>&lt;div${1: id="${2:id}"}&gt;$0&lt;/div&gt;</string>
+		<string>&lt;div${1: id="${2:name}"}&gt;$3&lt;/div&gt;$4</string>
 		<key>name</key>
 		<string>div</string>
 	</dict>
